@@ -1,0 +1,7 @@
+{% extends 'translator/base.html' %}
+{% block content %}
+<form action="{% url 'translate' %}" method="post">
+{% csrf_token %}
+    <label for=""></label> <input name="" type="textarea"/>
+</form>
+{% endblock %}
